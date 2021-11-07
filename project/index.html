@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Haneul's site</title>
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header h1 {display: inline;}
+        header img{margin-right: 20px; margin-left: 250px;}
+        h1{color:rgb(96, 189, 243); text-align: center; font-size: 70px; font-family: 'Times New Roman', Times, serif;}
+        li{display: inline; margin: 90px; list-style-type: none;}
+        a{text-decoration: none;}
+        li:hover {background-color: rgba(195, 239, 247, 0.247);}
+        ul {list-style: none;}
+        a{text-decoration: none;}
+        hr{border-width: 2px; border-color: rgb(101, 136, 233);}
+        article img{margin-left: 50px;}
+        nav ul {
+            text-align: center; border-top: 3px solid #8484e9;
+            border-bottom: 3px solid #9f9ff5; padding: 20px 10px;
+        }
+        nav ul il{
+            display: inline;
+            padding: 15px 20px;
+            letter-spacing: 5px;
+        }
+        nav li a:hover{
+            color: rgb(8, 8, 8);
+        }
+        body{width: 980px; margin: 0 auto;}
+        table{width: 700px; height: 250px; text-align: center;}
+        table th{background-color: rgb(186, 223, 248);}
+        aside button{margin-right: 10px;}
+    </style>
+    <script>
+           function login(){
+               let id = document.getElementById("id").value;
+               let pw = document.getElementById("pw").value;
+               if(id==="admin"){
+                   if(pw=="1234"){
+                       document.getElementById("login").innerHTML="<h2>" + id + 
+                          "alert으로 로그인이 되었습니다. </h2>"; 
+                   } else {
+                       alert("비밀번호를 확인하세요");
+                   }
+               }else{
+                   alert("회원가입을 하세요");
+               }
+           }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="./images/book.png" alt="book" width="100px" height="100px"> 
+        <h1>Haneul's store </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href=#introduction">introduction</a></li>
+            <li><a href=#Best">Best</a></li>
+            <li><a href=#product">product</a></li>
+            <li><a href=#Q&A">Q&A</a></li>
+        </ul>
+    </nav>
+    <section class="w3-left w3-container" style="width: 70%;">
+        <article>
+                <h2>주간 Best</h2>
+                <hr>
+                <img src="./images/TOEICRC.jpg" alt="TOEICRC" width="100px" height="100px">
+                <img src="./images/TOEICLC.jpg" alt="TOEICLC" width="100px" height="100px">
+                <img src="./images/voca.jpg" alt="voca" width="100px" height="100px">
+                <img src="./images/to.jpg" alt="to" width="100px" height="100px">
+            </div> 
+            <hr>
+            <div class="w3-container">
+                <h2>  상품 등록</h2>
+                저자명 : <input class="w3-input" type="text" name="" id="author"> <br>
+                사진 : <input class="w3-input" type="file" name="" id="file"> <br>
+                가격 : <input class="w3-input" type="text" name="" id="price"> <br>
+                <button class= "w3-button w3-blue" onclick="fileUpload();"> 상품등록</button>
+                <button class= "w3-button w3-blue" onclick="tablePrint();"> 상품리스트</button>
+          </div>
+          <hr>
+            <div id="list">
+                <h2>상품목록</h2>
+                <table class="w3-table-all w3-hoverable">
+                    <tr>
+                        <th>저자</th>
+                        <th>제목</th>
+                        <th>출판사</th>
+                    </tr>
+                    <tr>
+                        <td>David Cho</td>
+                        <td>해커스 토익 Listening</td>
+                        <td>해커스 어학연구소</td>
+                    </tr>
+                    <tr>
+                        <td>David Cho</td>
+                        <td>해커스 토익 reading</td>
+                        <td>해커스 어학연구소</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </section>
+        <aside class="right">
+            <div id="login">
+                <h3 >Log In</h3>
+                    <form action="#" >
+                        아이디  :
+                        <input type="text" name="" id="id"><br><br>
+                        패스워드:
+                        <input type="password" name="" id="pw"><br><br>
+                        <button onclick="login();">로그인</button><button onclick="cancel();">취소</button>
+                    </form>
+            </div>
+        </aside>
+    <footer class="w3-amber">
+        <div>
+            <div class="w3-col s4 w3-container">
+                <h3> Contact Me </h3>
+                <hr>
+                phone : 010-3685-9138<br>
+                E-mail : smf5250@naver.com<br>
+                Address : 부산시 부민동
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
