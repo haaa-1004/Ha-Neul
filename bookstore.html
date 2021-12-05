@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Haneul's store</title>
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       header h1{color:skyblue; text-align: center; font-size: 60px;}
+        header img{margin-right: 30px; margin-left: 200px;}
+        nav{font-size: 15px;}
+        nav ul li:hover{background-color: rgba(195, 239, 247, 0.247);}
+        nav ul{list-style-type: none;}
+        nav ul li a{text-decoration: none; color:black;}
+        * {font-family:Arial, Helvetica, sans-serif;}
+        h2{color:skyblue; font-style: italic;}
+        ul{
+            text-align: center; border-top: 2px solid powderblue; 
+            border-bottom: 2px solid powderblue; padding:15px 10px;}
+        li{
+            display:inline;
+            padding:20px 60px;
+            letter-spacing: 5px;
+        }
+        a:hover{color:skyblue;}
+        body {width: 950px; margin:0 auto;}
+        h1{display: inline;}
+        #book {border:2px solid powderblue; padding:15px 10px;}
+        article img{margin-left: 30px;}
+        #new {border:2px solid powderblue; padding:15px 10px;}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/book.png" alt="book" width="100px" height="100px"> 
+        <h1>Haneul's store </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href=#introduction">introduction</a></li>
+            <li><a href=#Best">Best</a></li>
+            <li><a href=#product">product</a></li>
+            <li><a href=#notice">notice</a></li>
+        </ul>
+    </nav>
+    <section class="w3-left w3-container" style="width: 70%;">
+        <article>
+                <h2>주간 Best</h2>
+                <div id="book">
+                   <img src="./images/TOEICRC.jpg" alt="TOEICRC" width="100px" height="150px">
+                   <img src="./images/TOEICLC.jpg" alt="TOEICLC" width="100px" height="150px">
+                   <img src="./images/voca.jpg" alt="voca" width="100px" height="150px">
+                   <img src="./images/to.jpg" alt="to" width="100px" height="150px"> 
+                </div>
+                <h2>이번 주 신간</h2>
+                <div id="new">
+                    <img src="./images/ielts.png" alt="ielts" width="100px" height="150px">
+                    <img src="./images/dd.jfif" alt="dd" width="100px" height="150px">
+                    <img src="./images/hsk.jpg" alt="hsk" width="100px" height="150px">
+                    <img src="./images/jl.png" alt="jl" width="100px" height="150px"> 
+                </div>
+                <h2>공지사항</h2>
+                <table class="w3-table-all w3-hoverable">
+                    <tr>
+                        <th>일자</th>
+                        <th>내용</th>
+                        <th>구분</th>
+                    </tr>
+                    <tr>
+                        <td>2021.11.1</td>
+                        <td>10월 누적 판매량</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2021.11.2</td>
+                        <td>11월 신간 안내</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2021.11.3</td>
+                        <td>웹 서버 점검 안내</td>
+                        <td></td>
+                    </tr>
+                </table>
+        </article>
+    </section>
+        <aside class="right">
+            <div id="login">
+                <h3 >Log In</h3>
+                    <form action="#" >
+                        아이디  :
+                        <input type="text" name="" id="id"><br><br>
+                        패스워드:
+                        <input type="password" name="" id="pw"><br><br>
+                        <button onclick="login();">로그인</button><button onclick="cancel();">취소</button>
+                    </form>
+            </div>
+        </aside>
+    </section>
+    <footer class="w3-amber">
+        <div>
+            <div class="w3-col s4 w3-container">
+                <h3> Contact Me </h3>
+                <hr>
+                phone : 010-3685-9138<br>
+                E-mail : smf5250@naver.com<br>
+                Address : 부산시 부민동
+            </div>
+            <div class="w3-col s4 w3-container">
+                <h5> Follow Me </h5>
+                <a href="https://www.instagram.com/_haaa__1004/"><i class="fa fa-instagram" style="font-size: 30px;"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
